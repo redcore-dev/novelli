@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muebles de Cocina</title>
+  <link rel="stylesheet" href="/styles/cats.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Muebles de Cocina</h1>
+    <div class="card-grid">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="" alt="Cerámico 1" class="card-img" />
+        <p class="card-description">placeholder</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Floating Back Button -->
+  <a href="../index.html" class="floating-btn">← Volver al catálogo</a>
+
+  <script>
+function changeSlide(button, direction) {
+  const slider = button.closest(".slider");
+  const slides = slider.querySelectorAll(".slide");
+  let current = Array.from(slides).findIndex(s => s.classList.contains("active"));
+
+  slides[current].classList.remove("active");
+  let next = (current + direction + slides.length) % slides.length;
+  slides[next].classList.add("active");
+}
+</script>
+
+</div>
+  <a href="https://wa.me/5491156677615" 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer">
+  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968841.png" 
+       alt="WhatsApp" width="60" height="60">
+</body>
+</html>
